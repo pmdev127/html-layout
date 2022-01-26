@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+
+    <style>
+      
+        *,**,***{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: greenyellow;
+            padding: 0;
+            margin: 0;
+        }
+
+        header{
+            background-color: greenyellow;
+            display: flex;
+            flex-direction: column;  
+        }
+
+        .header-main {
+            padding: 20px;
+        }
+        .header-main img{
+           float: right;
+           margin-top: -80px;
+        }
+        .header-main h1{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        ul{
+            margin: 8px;
+            padding: 20px;
+            background-color: green;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+         ul li{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+         }
+
+         hr{
+            border: 10px solid #ccc;
+         }
+
+         main{
+             padding: 10px 30px;
+             display: flex;
+             flex-direction: row;
+             height: 50vh;
+         }
+         section{
+             margin-right: 5px;
+             width: 60%;
+             background-color: rgb(8, 136, 8);
+             padding: 5px;
+             height: 100%;
+         }
+         section h1{
+            font-size: 26px;
+             text-align: center;
+             text-transform: uppercase;
+         }
+         aside{
+             margin: 0 0 0 5px;
+             width: 38%;
+             background-color: green;
+             padding: 5px;
+             text-align: center;
+             text-transform: uppercase;
+             height: 100%;
+         }
+         aside h1{
+             text-align: center;
+             text-transform: uppercase;
+            font-size: 26px;
+         }
+         aside img{
+             padding: 5px;
+             overflow: hidden;
+         }
+
+         footer{
+             padding: 5px;
+         }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <h1>BIRDWATCHING</h1>
+            <!-- <img height="100" src="bird.png" alt="bird img" /> -->
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Get Started</li>
+                <li>Photos</li>
+                <li>Gear</li>
+                <li>Forum</li>
+            </ul>
+        </nav>
+    </header>
+    <hr >
+    <main>
+        <section>
+
+            <h1>
+                Welcome
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit neque animi consequatur tempora facere sapiente, sunt sequi nam dolore minima ipsa nostrum perferendis tenetur officiis. Officia deleniti porro nisi nam?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, quia?
+            </p>
+        </section>
+
+        <aside>
+            <h1>
+                Favourite Photos
+            </h1>
+            <img height="120" src="https://media.istockphoto.com/photos/cardinal-in-spruce-tree-picture-id1312384073?b=1&k=20&m=1312384073&s=170667a&w=0&h=m77c6B5rqVpwk3rIHI6-vbICkiFrKElymP6txlDZHFo=" alt="birds" />
+            <img height="120" src="https://images.unsplash.com/photo-1550853024-fae8cd4be47f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJpcmR8ZW58MHx8MHx8&w=1000&q=80" alt="birds" />
+            <br>
+            <img height="200" src="https://media.istockphoto.com/photos/eastern-bluebirds-male-and-female-picture-id183412466?k=20&m=183412466&s=612x612&w=0&h=xaDRkk-cq7jZglzGO-UTn8Y0tNMHqFBnI5-tIzM68c0=" alt="birds" >
+        </aside>
+    </main>
+    <hr>
+    <footer>
+        <p>This fake website example is CCO - any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016</p>
+        <p><a href="#">Prabin Bhusal</a>@CopyRight, 2022</p>
+    </footer>
+    
+    
+</body>
+</html>
